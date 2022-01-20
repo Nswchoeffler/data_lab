@@ -32,4 +32,4 @@ with open('Norman2016.csv',newline = '') as csvfile:
     avgMin = avgMin/listlengthTMIN
 
     print(f"Max:{maxTemp}, Min: {minTemp}")
-    print (f"avg Max:{round(avgMax,2)},average min: {round(avgMin,2)}")
+    print (f"avg Max:{round(avgMax,2)},avg min: {round(avgMin,2)}")
