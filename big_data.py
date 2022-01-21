@@ -22,14 +22,12 @@ for row in reader:
             if i >= len(station_names):
                 station_names.append(Stations(currentStation))
 
-          
-
-for station in station_names:
-    if float(row['TMAX'])!= -996.00:
-        station.maxTemp = float(row['TMAX'])
-    if float(row['TMIN'])!= -996.00:
-        station.minTemp = float(row['TMIN'])
+                for row in reader:
+                    if float(row['TMAX'])!= -996.00:
+                        currentStation.maxTemp = float(row['TMAX'])
+                    if float(row['TMIN'])!= -996.00:
+                        currentStation.minTemp = float(row['TMIN'])
             
-for i in range(len(station_objects)):
-    print (f"the max for {station_names} is {max(station(maxTemp))}")
-    print (f"the min for {station_names} is {min(station(minTemp))}")
+for i in range(len(station_names)):
+    print (f"the max for {station_names} is {max(station.maxTemp)}")
+    print (f"the min for {station_names} is {min(station.minTemp)}")
