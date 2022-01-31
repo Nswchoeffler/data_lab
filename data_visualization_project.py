@@ -55,10 +55,11 @@ with open('BigData2016.csv',newline ='') as csvfile:
             station_num +=1
         certain_station = input(" which one would you like to station. please type the station by number")
         for station in stations:
-            plt.plot(day_x, Station[int(certain_station)-1].Maxlist, label = station.STID)
+            plt.plot(day_x, stations[int(certain_station)-1].Maxlist, label = station.STID)
     if certain_station_Y_N == "N":
         for station in stations:
             plt.plot(day_x, station.Maxlist, label = station.STID)
+    Tmax_or_tmin_print = input("If you would like me to print only the Tmax type (1)\n if you would you like me to only print the Tmin type (2)\n if you would like me to print both type (3)")
 
 
 
