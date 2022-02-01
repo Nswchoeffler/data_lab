@@ -28,15 +28,13 @@ with open('BigData2016.csv',newline ='') as csvfile:
                     self.Maxlist.append(self.Maxlist[-1])
 
     #creates stations and adds the names to a list
-    ARD2 = Station ("ARD2")
+    ALTU = Station ("ALTU")
     BEAV = Station ("BEAV")
-    BOIS = Station ("BOIS")
-    CENT = Station("CENT")
+    TISH = Station ("TISH")
     NRMN = Station ("NRMN")
     STIL = Station ("STIL")
-    TISH = Station ("TISH")
+    
     TULN = Station("TULN")
-    WOOD = Station("WOOD")
     stations = [ARD2,BEAV,BOIS,CENT,NRMN,STIL,TISH,TULN,WOOD]
     
     
